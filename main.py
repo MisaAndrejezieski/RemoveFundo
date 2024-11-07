@@ -40,7 +40,7 @@ def start_process():
 # Criar a interface gráfica
 app = tk.Tk()
 app.title("Remove Fundo de Imagem")
-app.configure(bg='#ffff99')  # Configura o fundo em tom pastel
+app.configure(bg='#0000ff')  # Configura o fundo em tom pastel
 
 # Estilos dos widgets
 bg_color = '#ff3399'
