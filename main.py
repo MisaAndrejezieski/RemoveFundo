@@ -43,7 +43,7 @@ app.title("Remove Fundo de Imagem")
 app.configure(bg='#ffff99')  # Configura o fundo em tom pastel
 
 # Estilos dos widgets
-bg_color = '#ffff99'
+bg_color = '#ffff66'
 fg_color = '#333'
 button_color = '#add8e6'
 entry_bg_color = '#fff'
