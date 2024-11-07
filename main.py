@@ -40,14 +40,14 @@ def start_process():
 # Criar a interface gráfica
 app = tk.Tk()
 app.title("Remove Fundo de Imagem")
-app.configure(bg='#0000ff')  # Configura o fundo em tom pastel
+app.configure(bg='#0000ff')  # Configura o fundo em tom azul
 
 # Estilos dos widgets
-bg_color = '#ff3399'
-fg_color = '#333'
-button_color = '#add8e6'
-entry_bg_color = '#fff'
-entry_fg_color = '#333'
+bg_color = '#ff3399'          # Rosa para os rótulos
+fg_color = '#333'             # Cor do texto
+button_color = '#add8e6'      # Azul claro para os botões
+entry_bg_color = '#fff'       # Branco para o fundo das entradas
+entry_fg_color = '#333'       # Cor do texto das entradas
 
 # Elementos da interface
 tk.Label(app, text="Arquivo de entrada:", bg=bg_color, fg=fg_color).grid(row=0, column=0, padx=10, pady=10)
