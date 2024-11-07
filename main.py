@@ -40,19 +40,27 @@ def start_process():
 # Criar a interface gráfica
 app = tk.Tk()
 app.title("Remove Fundo de Imagem")
+app.configure(bg='#f0f8ff')  # Configura o fundo em tom pastel
+
+# Estilos dos widgets
+bg_color = '#f0f8ff'
+fg_color = '#333'
+button_color = '#add8e6'
+entry_bg_color = '#fff'
+entry_fg_color = '#333'
 
 # Elementos da interface
-tk.Label(app, text="Arquivo de entrada:").grid(row=0, column=0, padx=10, pady=10)
-entry_input = tk.Entry(app, width=50)
+tk.Label(app, text="Arquivo de entrada:", bg=bg_color, fg=fg_color).grid(row=0, column=0, padx=10, pady=10)
+entry_input = tk.Entry(app, width=50, bg=entry_bg_color, fg=entry_fg_color)
 entry_input.grid(row=0, column=1, padx=10, pady=10)
-tk.Button(app, text="Procurar", command=browse_input).grid(row=0, column=2, padx=10, pady=10)
+tk.Button(app, text="Procurar", command=browse_input, bg=button_color, fg=fg_color).grid(row=0, column=2, padx=10, pady=10)
 
-tk.Label(app, text="Arquivo de saída:").grid(row=1, column=0, padx=10, pady=10)
-entry_output = tk.Entry(app, width=50)
+tk.Label(app, text="Arquivo de saída:", bg=bg_color, fg=fg_color).grid(row=1, column=0, padx=10, pady=10)
+entry_output = tk.Entry(app, width=50, bg=entry_bg_color, fg=entry_fg_color)
 entry_output.grid(row=1, column=1, padx=10, pady=10)
-tk.Button(app, text="Salvar como", command=browse_output).grid(row=1, column=2, padx=10, pady=10)
+tk.Button(app, text="Salvar como", command=browse_output, bg=button_color, fg=fg_color).grid(row=1, column=2, padx=10, pady=10)
 
-tk.Button(app, text="Iniciar", command=start_process).grid(row=2, column=1, pady=20)
+tk.Button(app, text="Iniciar", command=start_process, bg=button_color, fg=fg_color).grid(row=2, column=1, pady=20)
 
 # Iniciar a interface gráfica
 app.mainloop()
